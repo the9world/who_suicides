@@ -9,13 +9,6 @@ def run_app_eda():
         st.subheader('데이터 분석')
         df1= pd.read_csv(r"data\who_suicide_statistics.csv")
         df = pd.read_csv(r"data\who_suicide_statistics.csv")
-        if st.checkbox('데이터 프레임 원본 보기', value=True) :
-            st.dataframe(df1)
-            st.markdown("""<span style='color:#006494; font-size:18px;'>데이터 출처:<br></span>
-                <span style='color:#BA4160; font-size:15px; font-weight:bold;'>
-                https://www.kaggle.com/datasets/vishaljiodedra/university-ranking-in-the-uk?select=uni_dataset.csv</span>
-                """, unsafe_allow_html=True)
-        
         df.fillna(0, inplace=True) # suicides_no 열의 결측치를 min 값으로 대체
         df.reset_index(drop=True, inplace=True) # 인덱스 재정의, 기존 인덱스를 제거하고 새로 인덱스를 부여
         
@@ -33,30 +26,42 @@ def run_app_eda():
         # 비교할 때 사용하기 위해 한국 데이터만 따로 변수에 저장
         df_kor = df.groupby('country').get_group('Republic of Korea')
         df_kor.reset_index(drop=True, inplace=True)
-                
-        
-        if st.checkbox('데이터 전처리 보기') :
+
+        st.markdown("""<span style='color:#006494; font-size:18px;'>데이터 출처:<br></span>
+        <span style='color:#BA4160; font-size:15px; font-weight:bold;'>
+        https://www.kaggle.com/datasets/vishaljiodedra/university-ranking-in-the-uk?select=uni_dataset.csv</span>""",
+        unsafe_allow_html=True)
+
+        tab1, tab2= st.tabs(["데이터 프레임 원본 ", "데이터 프레임 전처리"])
+        with tab1:
+            st.dataframe(df1)
+        # if st.checkbox('데이터 프레임 원본 보기', value=True) :
+        #     st.dataframe(df1)
+        with tab2:
             st.dataframe(df)
-            st.text('전처리 설명')
-
-        if st.checkbox('기본 통계 데이터 보기') :
-            st.dataframe(df.describe(include="all"))
-        
-        if st.checkbox('데이터 내의 나라들 보기'):
+            st.text('전처리 설명: ')
+        tab3, tab4, tab5= st.tabs(["기본 통계 데이터 ", "국가들 보기", "연령대 보기"])
+        with tab3:
+            st.dataframe(df.describe(include="all").T)
+        with tab4:
             st.dataframe(df['country'].unique())
-
-        if st.checkbox('데이터 내의 연령대 보기'):
+        with tab5:
             st.dataframe(df['age'].unique())
 
         st.subheader('내가 원하는 국가 데이터 보기')
         df_country = df['country'].unique()
         df_country = ['"Select Country"'] + list(df_country)
         sel_country = st.selectbox('국가를 선택하세요', df_country)
+        
         if sel_country != '"Select Country"':
             filtered_df = df[df['country'] == sel_country]
             st.dataframe(filtered_df)
-                    
-        if st.checkbox('Top 10 자살률 국가 그래프 보기'):                
+
+        col1, col2 = st.columns(2)
+        
+        # if st.checkbox('Top 10 자살률 국가 그래프 보기'):                
+        with col1:
+            st.subheader("1️⃣Top10 자살률 그래프")
             # 자살 건수가 많은 나라 Top10
             df_sui_n=pd.DataFrame(df.groupby(['country'])['suicides_no'].sum().reset_index())
             df_sui_n.sort_values(by=['suicides_no'],ascending=False,inplace=True)
@@ -73,7 +78,7 @@ def run_app_eda():
                                 '#229954',  # Fairy
                                 '#641E16',  # Fighting
                             ]
-            fig_bar.set_size_inches(25.15, 10,20)
+            fig_bar.set_size_inches(25.15, 20,30)
             sns.set_context("paper", font_scale=1)
 
             f=sns.barplot(x=df_sui_n["country"].head(10),
@@ -81,7 +86,7 @@ def run_app_eda():
                         palette= type_colors)
             plt.xticks(fontsize=11)
             plt.yticks(fontsize=11)
-            f.set_title('Top 10 Countries having highest no. suicides', fontsize=30)
+            f.set_title('Top 10 Countries having highest suicides', fontsize=30)
             f.set_xlabel("Country",fontsize=25)
             f.set_ylabel("Suicides",fontsize=25)
             st.pyplot(fig_bar)
@@ -122,8 +127,10 @@ def run_app_eda():
 
             st.plotly_chart(fig_sex)
 
-
-        if st.checkbox('World & Korea 자살 비교'):
+        with col2:
+            st.subheader("2️⃣World & Korea 자살비교")
+            # st.image("https://static.streamlit.io/examples/dog.jpg")
+        # if st.checkbox('World & Korea 자살 비교'):
             # 세계 데이터 평균과 한국 데이터 연도별 자살 비교
             fig_world_korea, ax = plt.subplots()
             sns.lineplot(data=df, x='year', y='suicides_no', color='r', label='World')
