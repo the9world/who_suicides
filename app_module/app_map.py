@@ -29,9 +29,9 @@ def run_app_map():
                             locationmode='country names',
                             animation_frame= 'year')
     fig4.update_layout( title=
-                       {'text': 'World Suicides',
+                       {'text': 'World Suicides Map',
                         'y': 1.0,
-                        'x': 0.2,
+                        'x': 0.15,
                         'yanchor': 'top',
                         'font': {'size': 45}        }     )
     st.plotly_chart(fig4)

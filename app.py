@@ -6,15 +6,20 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
-import plotly.io as pio
+# import plotly.io as pio
 from IPython.display import HTML
 from app_module.app_home import run_app_home
 from app_module.app_eda import run_app_eda
 from app_module.app_ml import run_app_ml
 from app_module.app_map import run_app_map
-font_path = "C:/Windows/Fonts/NGULIM.TTF"
-font = font_manager.FontProperties(fname=font_path).get_name()
-rc('font', family=font)
+font_path = "C:/Windows/Fonts/gulim.ttc"
+
+# 폰트 이름을 가져옵니다.
+fontprop = font_manager.FontProperties(fname=font_path)
+font_name = fontprop.get_name()
+
+# 폰트 설정을 변경합니다.
+rc('font', family=font_name)
 
 
 

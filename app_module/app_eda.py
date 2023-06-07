@@ -115,7 +115,7 @@ def run_app_eda():
                     marker=dict(colors=['hotpink', 'purple']))])
 
             fig_sex.update_layout(
-                title={'text': "남녀 자살률 비교", 'y': 0.95, 'x': 0.5, 'xanchor': 'right', 'yanchor': 'top'},
+                title={'text': "sex suicides", 'y': 0.95, 'x': 0.5, 'xanchor': 'right', 'yanchor': 'top'},
                 annotations=[dict(text="""<span style='font-weight: bold; color: #B3A7DC'>↙World
                                   <span style='font-weight: bold; color: #84A7D3'>     Korea↘</span>""",
                                 x=0.5, y=0.95, font_size=25, showarrow=False)])
