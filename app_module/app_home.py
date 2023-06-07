@@ -6,9 +6,9 @@ from streamlit_extras.let_it_rain import rain
 def run_app_home():
         
     # st.title("University Ranking in the UK")University Ranking in the UK
-    st.markdown("""<span style='color:#31B675; font-size:50px; font-weight:bold;'> 🏴WHO </span>
+    st.markdown("""<span style='color:#31B675; font-size:50px; font-weight:bold;'> ☑️WHO </span>
                 <span style='color:black; font-size:30px;'> Suicides </span>
-                <span style='color:#31B675; font-size:50px; font-weight:bold;'>  Statistics </span>""", unsafe_allow_html=True)
+                <span style='color:#31B675; font-size:50px; font-weight:bold;'>  Statistics🏴 </span>""", unsafe_allow_html=True)
     
 
     st.video('https://www.youtube.com/watch?v=CckoVylNr1o')
@@ -27,7 +27,7 @@ def run_app_home():
 
 
     rain(
-        emoji=" /            /               /                    /",
+        emoji=" /       /",
         font_size=54,
         falling_speed=5,
         animation_length="infinite",
