@@ -31,7 +31,7 @@ def main():
         
         st.sidebar.image('https://cdn.newspost.kr/news/photo/202109/94483_96057_3538.jpg')
         menu= ['🏚️ Home', '📊E D A (탐색적 데이터 분석)', '🧭 Predict The Future (미래예측)', '🗺️ World Map Chart (세계지도)']
-        choice = st.sidebar.selectbox('메뉴', menu)
+        choice = st.sidebar.selectbox('Select Menu', menu)
         st.sidebar.image('https://cdn.swupress.swu.ac.kr/news/photo/202109/10830_10662_2056.jpg')
         st.sidebar.image('https://img.hankyung.com/photo/202102/AD.25367487.1.jpg')
         st.markdown("""

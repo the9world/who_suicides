@@ -35,6 +35,8 @@ def run_app_eda():
         tab1, tab2= st.tabs(["데이터 프레임 원본☑️", "데이터 프레임 전처리☑️"])
         with tab1:
             st.dataframe(df1)
+            st.success(df1.shape)
+            st.text('데이터 정보: ')
             st.markdown("""<span style='color:#006494; font-size:13px;'>country : 국가,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; year : 연도<br>
                     sex : 성별,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -45,7 +47,8 @@ def run_app_eda():
         #     st.dataframe(df1)
         with tab2:
             st.dataframe(df)
-            st.markdown("""<span style='color:#006494; font-size:13px;'> 데이터 프레임 전처리 : <br>
+            st.success(df.shape)
+            st.markdown("""<span style='color:#006494; font-size:13px;'> 데이터 프레임 전처리 : <br><br>
                         1. 결측치를 0으로 변환: drop하면 같은 연도에 있는 데이터와 없는 데이터가 생겨서 min 처리,<br><br>
                         2. age의 5~14세를 알아보기 쉽게 05-14로 변환하고 정렬하였음.<br><br>
                         3. 1985년 이전 데이터는 결측치가 많고 데이터가 부족해서 제거, 마찬가지로 2016년도 같은 이유로 제거<br><br>

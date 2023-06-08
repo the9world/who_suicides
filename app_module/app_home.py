@@ -4,7 +4,7 @@ import pandas as pd
 from streamlit_extras.let_it_rain import rain
 
 def run_app_home():
-    backgroundColor="#002b36"
+
     # st.title("University Ranking in the UK")University Ranking in the UK
     st.markdown("""<span style='color:#31B675; font-size:50px; font-weight:bold;'> ☑️WHO </span>
                 <span style='color:black; font-size:30px;'> Suicides </span>
