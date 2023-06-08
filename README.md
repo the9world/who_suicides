@@ -31,7 +31,6 @@ Kaggle : https://www.kaggle.com/
 </summary>
 
 ```python
-# Streamilt st.tab 기능 error
 tab1, tab2 = st.tabs(df, df1)
    with tab1:
    with tab2:
@@ -41,7 +40,6 @@ Streamlit의 st.tab을 사용하면
 비슷한 기능인 st.columns로 대체하였음.
 """
 col1, col2 = st.columns(2)
-
    with col1:
    with col2:
 ```
