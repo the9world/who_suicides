@@ -1,6 +1,4 @@
 import streamlit as st
-import numpy as np
-import pandas as pd
 from streamlit_extras.let_it_rain import rain
 
 def run_app_home():

@@ -1,8 +1,6 @@
 import plotly.express as px
 import pandas as pd 
 import streamlit as st
-import plotly.io as pio
-import numpy as np
 import time
 def run_app_map():
 
