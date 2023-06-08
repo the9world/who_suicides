@@ -28,7 +28,6 @@ px(플로틀리익스프레스) choropleth 지도함수
 (2) 설치 및 실행
 Repository를 clone하고, 패키지 설치, 환경변수 설정, 실행하는 과정에 대한 내용들을 코드로 적어준다.  
 
-skill stack: https://cocoon1787.tistory.com/689  
 화면 구성/API 주소  
 
 <img src="https://img.shields.io/badge/python-3776AB?style=for-the-badge&logo=python&logoColor=white">
@@ -45,8 +44,7 @@ skill stack: https://cocoon1787.tistory.com/689
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=the9world)](https://github.com/the9world/github-readme-stats)
 
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=the9world&layout=pie)](https://github.com/the9world/github-readme-stats)  
-https://shields.io/  
-https://simpleicons.org/?q=ganache  
+
 
 |<img src="https://github.com/~~~.png" width="80">|<img src="https://github.com/~~~.png" width="80">|
 |:---:|:---:|
@@ -59,7 +57,6 @@ https://simpleicons.org/?q=ganache
 <h4 align="center"> 🛠 Tech Stack 🛠 </h4>
 <h5 align="center"> 🛠 Tech Stack 🛠 </h5>
 <h6 align="center"> 🛠 Tech Stack 🛠 </h6>   
-이지미(릳미쉽게) : https://www.easy-me.com/d
 
 ```python
 # 1. 에러가 떳었다 이유는 모른다.
@@ -88,39 +85,54 @@ if sel_country != '"Select Country"':
         with col2:
 ```
 
+<details><summary>Python Error 해결
+</summary>
+
 ```python
 # 1. 미래예측 에러
-df_prophet= df_avocado.rename(columns={'Date':'ds', 'AveragePrice': 'y'})
-m = Prophet()
+
+data= pd.DataFrame(data.groupby(['year'])['suicides_no'].sum()).reset_index()
+data= data.sort_values(by=['suicides_no'], ascending=False)
+data= data.set_index('year')
+
+df_prophet= data.copy()
+df_prophet.reset_index(drop=False, inplace=True)
+df_prophet.columns = ['ds', 'y']
+
+m= Prophet()
 m.fit(df_prophet)
-future= m.make_future_dataframe(periods= 365, freq= 'D')
+future= m.make_future_dataframe(periods=5, freq='Y')
 forecast= m.predict(future)
-m.plot(forecast, xlabel= 'Date', ylabel='Price')
-m.plot_components(forecast)
+
+fig= m.plot(forecast)
+
+""" 
+Prophet을 활용한 미래예측에는 YY/MM/DD(년월일) 전부가 필요하지만,
+who_suicides의 year column은 연도만 있는 데이터라서 Prophet에서 error가 발생,
+데이터를 새로 불러서 기존 데이터에 year의 값을 "연도-01월-01일"으로 파싱하여 해결하였다.
+"""
 
 # 2. 해결
 
-dateparse = lambda dates: pd.to_datetime(dates, format='%Y')
-            data = pd.read_csv('https://raw.githubusercontent.com/the9world/My_Study/main/data/Z_running_file/who_suicide_statistics.csv', parse_dates=['year'], index_col='year', date_parser=dateparse)
-            data.drop('population', axis=1, inplace=True)
-            data.fillna(0, inplace=True)
-            data = data.loc[(data.index >= '1985-01-01') & (data.index < '2016-01-01')]
-            data = data.reset_index()
-            data = pd.DataFrame(data.groupby(['year'])['suicides_no'].sum()).reset_index()
-            data = data.sort_values(by=['suicides_no'], ascending=False)
-            data = data.set_index('year')
+parse = lambda dates: pd.to_datetime(dates, format='%Y')
+   data= pd.read_csv('https://raw.githubusercontent.com/the9world/My_Study/main/data/Z_running_file/who_suicide_statistics.csv',
+   parse_dates=['year'], index_col='year', date_parser=parse)
 
-            df_prophet = data.copy()
-            df_prophet.reset_index(drop=False, inplace=True)
-            df_prophet.columns = ['ds', 'y']
-            df_prophet = df_prophet[:]
+   data= pd.DataFrame(data.groupby(['year'])['suicides_no'].sum()).reset_index()
+   data= data.sort_values(by=['suicides_no'], ascending=False)
+   data= data.set_index('year')
 
-            m = Prophet()
-            m.fit(df_prophet)
-            future = m.make_future_dataframe(periods=5, freq='Y')
-            forecast = m.predict(future)
-            
-            fig = m.plot(forecast)
+   df_prophet= data.copy()
+   df_prophet.reset_index(drop=False, inplace=True)
+   df_prophet.columns = ['ds', 'y']
+   df_prophet= df_prophet[:]
+
+   m= Prophet()
+   m.fit(df_prophet)
+   future= m.make_future_dataframe(periods=5, freq='Y')
+   forecast= m.predict(future)
+   
+   fig= m.plot(forecast)
 ```
 
 ``` python
