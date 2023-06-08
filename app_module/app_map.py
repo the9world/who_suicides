@@ -6,7 +6,7 @@ import numpy as np
 import time
 def run_app_map():
 
-    with st.spinner('지도를 그리는 중..'):
+    with st.spinner('🗺️ 지도를 그리는 중.. ☠️☠️'):
         time.sleep(1.5)
 
         df = pd.read_csv('https://raw.githubusercontent.com/the9world/My_Study/main/data/Z_running_file/who_suicide_statistics.csv')

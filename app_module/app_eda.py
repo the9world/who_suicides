@@ -32,14 +32,26 @@ def run_app_eda():
         https://www.kaggle.com/datasets/vishaljiodedra/university-ranking-in-the-uk?select=uni_dataset.csv</span>""",
         unsafe_allow_html=True)
 
-        tab1, tab2= st.tabs(["데이터 프레임 원본 ", "데이터 프레임 전처리"])
+        tab1, tab2= st.tabs(["데이터 프레임 원본☑️", "데이터 프레임 전처리☑️"])
         with tab1:
             st.dataframe(df1)
+            st.markdown("""<span style='color:#006494; font-size:13px;'>country : 국가,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; year : 연도<br>
+                    sex : 성별,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; age : 나이 (6개의 구간으로 되어 있음)<br>
+                    suicides_no : 자살 건수,&nbsp;&nbsp;&nbsp; population : 현재 생존인구 </span>""", unsafe_allow_html=True)
+
         # if st.checkbox('데이터 프레임 원본 보기', value=True) :
         #     st.dataframe(df1)
         with tab2:
             st.dataframe(df)
-            st.text('전처리 설명: ')
+            st.markdown("""<span style='color:#006494; font-size:13px;'> 데이터 프레임 전처리 : <br>
+                        1. 결측치를 0으로 변환: drop하면 같은 연도에 있는 데이터와 없는 데이터가 생겨서 min 처리,<br><br>
+                        2. age의 5~14세를 알아보기 쉽게 05-14로 변환하고 정렬하였음.<br><br>
+                        3. 1985년 이전 데이터는 결측치가 많고 데이터가 부족해서 제거, 마찬가지로 2016년도 같은 이유로 제거<br><br>
+                        4. population : 현재 생존인구 제거, 연령대, 성별 등 전체 생존 인원에 대한 항목인데 결측치가 많아서<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp; 해당 컬럼의 결측치를 0이나 min으로 대체하기에도 현재 생존인구가 자살인구보다 적어지는 경우도 있어서 제거
+                        </span>""", unsafe_allow_html=True)
         tab3, tab4, tab5= st.tabs(["기본 통계 데이터 ", "국가들 보기", "연령대 보기"])
         with tab3:
             st.dataframe(df.describe(include="all").T)
@@ -61,7 +73,7 @@ def run_app_eda():
         
         # if st.checkbox('Top 10 자살률 국가 그래프 보기'):                
         with col1:
-            st.subheader("1️⃣Top10 자살률 그래프")
+            st.subheader("1️⃣자살 Top 10 국가")
             # 자살 건수가 많은 나라 Top10
             df_sui_n=pd.DataFrame(df.groupby(['country'])['suicides_no'].sum().reset_index())
             df_sui_n.sort_values(by=['suicides_no'],ascending=False,inplace=True)
@@ -91,7 +103,7 @@ def run_app_eda():
             f.set_ylabel("Suicides",fontsize=25)
             st.pyplot(fig_bar)
         
-        if st.checkbox(' 나이별 자살률 그래프 보기'):  
+        if st.checkbox(' 나이별 자살률 그래프 보기', value=True):  
             # 나이 자살 비교
             fig_age = go.Figure(data=[
                 go.Pie(labels=df['age'], values=df['suicides_no'], textinfo='label+percent',
@@ -109,7 +121,7 @@ def run_app_eda():
             st.plotly_chart(fig_age)
        
         
-        if st.checkbox( '남녀 자살률 비교 '):
+        if st.checkbox( '남녀 자살률 비교 ', value=True):
             # 남녀 자살 비교, 세계 : 한국
             fig_sex = go.Figure(data=[
                 go.Pie(labels=df['sex'], values=df['suicides_no'], textinfo='label+percent',
@@ -128,7 +140,7 @@ def run_app_eda():
             st.plotly_chart(fig_sex)
 
         with col2:
-            st.subheader("2️⃣World & Korea 자살비교")
+            st.subheader("2️⃣World & Korea 자살 비교")
             # st.image("https://static.streamlit.io/examples/dog.jpg")
         # if st.checkbox('World & Korea 자살 비교'):
             # 세계 데이터 평균과 한국 데이터 연도별 자살 비교

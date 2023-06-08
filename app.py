@@ -12,19 +12,21 @@ from app_module.app_home import run_app_home
 from app_module.app_eda import run_app_eda
 from app_module.app_ml import run_app_ml
 from app_module.app_map import run_app_map
-font_path = "C:/Windows/Fonts/gulim.ttc"
-
+import platform # 폰트용
+font_path = "C:/Windows/Fonts/NanumGothic.ttc"
 # 폰트 이름을 가져옵니다.
 fontprop = font_manager.FontProperties(fname=font_path)
 font_name = fontprop.get_name()
-
 # 폰트 설정을 변경합니다.
+plt.rcParams['axes.unicode_minus'] = False
 rc('font', family=font_name)
-
+if platform.system()=='Linux':
+    rc('font', famliy= 'NanumGothic')
 
 
 
 def main():
+
     with st.sidebar:
         # img_url= 'https://cphoto.asiae.co.kr/listimglink/1/2016090911072745990_1.jpg'
         # st.image(img_url)
@@ -37,7 +39,20 @@ def main():
         st.markdown("""
                     <span style='color:#31B675; font-size:15px; font-weight:bold;'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;그림 by.연작가 </span>""", unsafe_allow_html=True)
-
+        st.markdown(""" <style> [class^="st-b"] { color: red; } </style>""",
+                    unsafe_allow_html=True )
+        
+        st.markdown(
+            """
+            <style>
+            body {
+                background-color: #f1f1f1;
+            }
+            </style>
+            """,
+            unsafe_allow_html=True)
+        
+        
     # # st.title("University Ranking in the UK")University Ranking in the UK
     # st.markdown("""<span style='color:#31B675; font-size:50px; font-weight:bold;'> WHO Suicides </span>
     #             <span style='color:black; font-size:20px;'> ( 세계보건기구 자살데이터 )</span>""", unsafe_allow_html=True)
@@ -77,7 +92,6 @@ def main():
         남녀 간 자살률 성비는 10대가 1.1배로 가장 낮았으며,
         80세 이상이 3.7배로 가장 높게 나타났습니다.
                                                 -⚖️한국생명존중희망재단⚖️-""")
-        
 
 
         # img_url= 'https://www.irishtimes.com/resizer/pPJML7tkKkfBuXUYNfRzjnQxqjI=/1600x0/filters:format(jpg):quality(70)/cloudfront-eu-central-1.images.arcpublishing.com/irishtimes/XPHTWNJW3THZZ3UTNI3RDXXOPE.jpg'

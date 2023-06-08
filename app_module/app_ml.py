@@ -14,7 +14,7 @@ def run_app_ml():
         tab1, tab2= st.tabs(["World, predict the future ", "Korea, predict the future"])
         # 데이터 로딩 함수는 여기에!
         with tab1:
-            st.success('World 미래예측 완료☠️')
+            st.success('World 미래예측')
             
             dateparse = lambda dates: pd.to_datetime(dates, format='%Y')
             data = pd.read_csv('https://raw.githubusercontent.com/the9world/My_Study/main/data/Z_running_file/who_suicide_statistics.csv', parse_dates=['year'], index_col='year', date_parser=dateparse)
@@ -47,7 +47,7 @@ def run_app_ml():
   
         with tab2:
             # 한국 미래 예측
-            st.success('Korea 미래예측 완료☠️')
+            st.success('Korea 미래예측')
             
             dateparse_korea = lambda dates: pd.to_datetime(dates, format='%Y')
             data_korea= pd.read_csv('https://raw.githubusercontent.com/the9world/My_Study/main/data/Z_running_file/who_suicide_statistics.csv', parse_dates=['year'], index_col='year',date_parser=dateparse_korea)
