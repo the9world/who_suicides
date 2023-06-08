@@ -7,7 +7,7 @@ import time
 def run_app_map():
 
     with st.spinner('🗺️ 지도를 그리는 중.. ☠️☠️'):
-        time.sleep(1.5)
+        time.sleep(2)
 
         df = pd.read_csv('https://raw.githubusercontent.com/the9world/My_Study/main/data/Z_running_file/who_suicide_statistics.csv')
         df.fillna(0, inplace=True) # suicides_no 열의 결측치를 min 값으로 대체
