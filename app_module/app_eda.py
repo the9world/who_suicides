@@ -27,8 +27,8 @@ def run_app_eda():
         df_kor = df.groupby('country').get_group('Republic of Korea')
         df_kor.reset_index(drop=True, inplace=True)
 
-        st.markdown("""<span style='color:#006494; font-size:18px;'>데이터 출처:<br></span>
-        <span style='color:#BA4160; font-size:15px; font-weight:bold;'>
+        st.markdown("""<span style='color:#2F4F4F; font-size:18px;'>데이터 출처:<br></span>
+        <span style='color:#2F4F4F; font-size:15px; font-weight:bold;'>
         kaggle(캐글) : https://www.kaggle.com/datasets/vishaljiodedra/university-ranking-in-the-uk?select=uni_dataset.csv</span>""",
         unsafe_allow_html=True)
 
