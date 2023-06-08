@@ -41,4 +41,4 @@ def run_app_map():
                             'yanchor': 'top',
                             'font': {'size': 45}        }     )
         st.plotly_chart(fig4)
-    
+        st.text('재생을 누르거나 슬라이더를 움직여서 연도별로 지도를 확인하세요')
