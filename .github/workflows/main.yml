@@ -23,7 +23,7 @@ jobs:
           host: ${{ secrets.HOST }} # 내가 HOST에 등록한 IP로 github가 접속함
           username: ${{ secrets.USER }} # 내가 등록한 아이디
           script: |
-            cd Github/Kmeans_app/                        
+            cd Github/who_suicides/                        
             git pull # 레파지토리 프라이빗이면 맨 밑줄 실행
 #   깃허브 레파지토리가 프라이빗으로 만들어져 있을때. 
 #   git pull https://${{ secrets.GIT_USER }}:${{ secrets.GIT_PASSWORD }}@github.나의 리포지토리 주소.git
