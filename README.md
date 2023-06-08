@@ -94,6 +94,7 @@ parse = lambda dates: pd.to_datetime(dates, format='%Y')
 ```
 </details>
 
+---
 
 ## EC2 가상환경 font error (출처: https://luvris2.tistory.com/119)
 <details><summary> [Click : 펼치기 / 접기]
