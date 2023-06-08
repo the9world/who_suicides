@@ -49,8 +49,6 @@ col1, col2 = st.columns(2)
 ```python
 # 1. 미래예측 에러
 
-df['year'] = df['year'].astype(str) + '-01-01'
-
 df_prophet= df.copy()
 df_prophet.reset_index(drop=False, inplace=True)
 df_prophet.columns = ['ds', 'y']
