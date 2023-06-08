@@ -8,19 +8,11 @@ plotly, time, prophet
 ## Skills
 
 ## Platforms & Languages
-<img src="https://img.shields.io/badge/windows-0078D6?style=for-the-badge&logo=python&logoColor=white">
-<img src="https://img.shields.io/badge/linux-FCC624?style=for-the-badge&logo=linux&logoColor=black">
-<img src="https://img.shields.io/badge/anaconda-44A833?style=for-the-badge&logo=python&logoColor=white">
-<img src="https://img.shields.io/badge/amazonaws-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white">
-<img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white">
-
+<img src="https://img.shields.io/badge/windows-0078D6?style=for-the-badge&logo=python&logoColor=white"><img src="https://img.shields.io/badge/linux-FCC624?style=for-the-badge&logo=linux&logoColor=black"><img src="https://img.shields.io/badge/anaconda-44A833?style=for-the-badge&logo=python&logoColor=white"><img src="https://img.shields.io/badge/amazonaws-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white"><img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white">
 <img src="https://img.shields.io/badge/python-3776AB?style=for-the-badge&logo=python&logoColor=white">
 
 ## Tools
-<img src="https://img.shields.io/badge/git-F05032?style=for-the-badge&logo=git&logoColor=white">
-<img src="https://img.shields.io/badge/googlecolab-F9AB00?style=for-the-badge&logo=git&logoColor=white">
-<img src="https://img.shields.io/badge/streamlit-FF4B4B?style=for-the-badge&logo=git&logoColor=white">
-<img src="https://img.shields.io/badge/plotly-3F4F75?style=for-the-badge&logo=git&logoColor=white">  
+<img src="https://img.shields.io/badge/git-F05032?style=for-the-badge&logo=git&logoColor=white"><img src="https://img.shields.io/badge/googlecolab-F9AB00?style=for-the-badge&logo=git&logoColor=white"><img src="https://img.shields.io/badge/streamlit-FF4B4B?style=for-the-badge&logo=git&logoColor=white"><img src="https://img.shields.io/badge/plotly-3F4F75?style=for-the-badge&logo=git&logoColor=white">  
 
    1. 라이브러리
       - streamlit, matplotlib, pandas, seaborn, streamlit_extras, 
