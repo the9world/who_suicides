@@ -29,7 +29,7 @@ def run_app_home():
 
 
     rain(
-        emoji=" /       /",
+        emoji="         /    &nbsp;&nbsp;&nbsp;      /  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   /",
         font_size=54,
         falling_speed=5,
         animation_length="infinite",
