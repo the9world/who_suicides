@@ -28,7 +28,7 @@ def run_app_eda():
 
         st.markdown("""<span style='color:#2F4F4F; font-size:18px;'>데이터 출처:<br></span>
         <span style='color:#2F4F4F; font-size:15px; font-weight:bold;'>
-        kaggle(캐글) : https://www.kaggle.com/datasets/vishaljiodedra/university-ranking-in-the-uk?select=uni_dataset.csv</span>""",
+        kaggle(캐글) : https://www.kaggle.com/</span>""",
         unsafe_allow_html=True)
 
         tab1, tab2= st.tabs(["데이터 프레임 원본☑️", "데이터 프레임 전처리☑️"])
