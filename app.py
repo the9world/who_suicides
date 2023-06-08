@@ -19,7 +19,7 @@ matplotlib.rcParams['axes.unicode_minus'] =False
 plt.rcParams['axes.unicode_minus'] = False
 # rc('font', family=font_name)
 if platform.system()=='Linux':
-    rc('font', famliy= 'NanumGothic')
+    rc('font', family= 'NanumGothic')
 
 
 
