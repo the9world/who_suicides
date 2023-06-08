@@ -49,13 +49,12 @@ col1, col2 = st.columns(2)
 ```python
 # 1. 미래예측 에러
 
-data= pd.DataFrame(data.groupby(['year'])['suicides_no'].sum()).reset_index()
-data= data.sort_values(by=['suicides_no'], ascending=False)
-data= data.set_index('year')
+df['year'] = df['year'].astype(str) + '-01-01'
 
-df_prophet= data.copy()
+df_prophet= df.copy()
 df_prophet.reset_index(drop=False, inplace=True)
 df_prophet.columns = ['ds', 'y']
+df_prophet= df_prophet[:]
 
 m= Prophet()
 m.fit(df_prophet)
@@ -72,25 +71,19 @@ who_suicides의 year column은 연도만 있는 데이터라서 Prophet에서 er
 
 # 2. 해결
 
-parse = lambda dates: pd.to_datetime(dates, format='%Y')
-   data= pd.read_csv('https://raw.githubusercontent.com/the9world/My_Study/main/data/Z_running_file/who_suicide_statistics.csv',
-   parse_dates=['year'], index_col='year', date_parser=parse)
+df['year'] = df['year'].astype(str) + '-01-01'
 
-   data= pd.DataFrame(data.groupby(['year'])['suicides_no'].sum()).reset_index()
-   data= data.sort_values(by=['suicides_no'], ascending=False)
-   data= data.set_index('year')
+df_prophet= df.copy()
+df_prophet.reset_index(drop=False, inplace=True)
+df_prophet.columns = ['ds', 'y']
+df_prophet= df_prophet[:]
 
-   df_prophet= data.copy()
-   df_prophet.reset_index(drop=False, inplace=True)
-   df_prophet.columns = ['ds', 'y']
-   df_prophet= df_prophet[:]
+m= Prophet()
+m.fit(df_prophet)
+future= m.make_future_dataframe(periods=5, freq='Y')
+forecast= m.predict(future)
 
-   m= Prophet()
-   m.fit(df_prophet)
-   future= m.make_future_dataframe(periods=5, freq='Y')
-   forecast= m.predict(future)
-   
-   fig= m.plot(forecast)
+fig= m.plot(forecast)
 ```
 </details>
 
