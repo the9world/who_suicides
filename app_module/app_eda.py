@@ -60,6 +60,7 @@ def run_app_eda():
             st.dataframe(df.describe(include="all").T)
         with tab4:
             st.dataframe(df['country'].unique())
+            st.text(df['country'].nunique())
         with tab5:
             st.dataframe(df['age'].unique())
 
@@ -68,9 +69,11 @@ def run_app_eda():
         df_country = ['"Select Country"'] + list(df_country)
         sel_country = st.selectbox('국가를 선택하세요', df_country)
         
+        
         if sel_country != '"Select Country"':
             filtered_df = df[df['country'] == sel_country]
             st.dataframe(filtered_df)
+            st.text(filtered_df.shape)
 
         col1, col2 = st.columns(2)
         
