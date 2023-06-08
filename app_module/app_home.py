@@ -9,9 +9,9 @@ def run_app_home():
     st.markdown("""<span style='color:#31B675; font-size:60px; font-weight:bold;'> ☑️WHO </span>
                 <span style='color:black; font-size:25px;'> Suicides </span>
                 <span style='color:#31B675; font-size:60px; font-weight:bold;'>  Statistics </span>""", unsafe_allow_html=True)
-    st.markdown("""<span style='color:#31B675; font-size:25px; font-weight:bold;'> (세계보건기구 </span>
+    st.markdown("""<span style='color:#31B675; font-size:25px;'> (세계보건기구 </span>
                 <span style='color:black; font-size:15px;'> 자살 </span>
-                <span style='color:#31B675; font-size:25px; font-weight:bold;'>  통계) </span>""", unsafe_allow_html=True)
+                <span style='color:#31B675; font-size:25px; '>  통계) </span>""", unsafe_allow_html=True)
 
     st.video('https://www.youtube.com/watch?v=CckoVylNr1o')
     st.markdown("""<span style='color:#006494; font-size:20px;'>✨보건복지상담센터  </span>
