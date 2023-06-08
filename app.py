@@ -13,9 +13,11 @@ from app_module.app_eda import run_app_eda
 from app_module.app_ml import run_app_ml
 from app_module.app_map import run_app_map
 import platform # 폰트용
-import matplotlib
-matplotlib.rcParams['font.family'] ='NanumGothic'
-matplotlib.rcParams['axes.unicode_minus'] =False
+from matplotlib import rc
+import matplotlib.pyplot as plt
+
+plt.rcParams['font.family'] ='NanumGothic'
+plt.rcParams['axes.unicode_minus'] =False
 plt.rcParams['axes.unicode_minus'] = False
 # rc('font', family=font_name)
 if platform.system()=='Linux':
