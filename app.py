@@ -23,8 +23,6 @@ plt.rcParams['axes.unicode_minus'] = False
 if platform.system()=='Linux':
     rc('font', family= 'NanumGothic')
 
-
-
 def main():
 
     with st.sidebar:
