@@ -65,8 +65,8 @@ fig= m.plot(forecast)
 
 """ 
 Prophet을 활용한 미래예측에는 YY/MM/DD(년월일) 전부가 필요하지만,
-who_suicides의 year column은 연도만 있는 데이터라서 Prophet에서 error가 발생,
-데이터를 새로 불러서 기존 데이터에 year의 값을 "연도-01월-01일"으로 파싱하여 해결하였다.
+who_suicides의 year column은 "연도" 뿐인 데이터라서 Prophet에서 error가 발생,
+기존 데이터 year column의 값 "연도"에 +"-01-01"을 추가하여 해결하였다.
 """
 
 # 2. 해결
