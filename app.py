@@ -13,13 +13,11 @@ from app_module.app_eda import run_app_eda
 from app_module.app_ml import run_app_ml
 from app_module.app_map import run_app_map
 import platform # 폰트용
-font_path = "C:/Windows/Fonts/NanumGothic.ttc"
-# 폰트 이름을 가져옵니다.
-fontprop = font_manager.FontProperties(fname=font_path)
-font_name = fontprop.get_name()
-# 폰트 설정을 변경합니다.
+import matplotlib
+matplotlib.rcParams['font.family'] ='NanumGothic'
+matplotlib.rcParams['axes.unicode_minus'] =False
 plt.rcParams['axes.unicode_minus'] = False
-rc('font', family=font_name)
+# rc('font', family=font_name)
 if platform.system()=='Linux':
     rc('font', famliy= 'NanumGothic')
 
