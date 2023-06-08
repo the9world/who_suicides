@@ -77,4 +77,3 @@ def run_app_ml():
             fig_korea_components = m_korea.plot_components(forecast_korea)
             fig_korea_components.suptitle('Korea 미래예측 구성 요소', x=0.5, y=1.05, fontsize=25)
             st.pyplot(fig_korea_components)
-
