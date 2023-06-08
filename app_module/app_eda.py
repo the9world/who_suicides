@@ -7,8 +7,8 @@ import plotly.graph_objects as go
 
 def run_app_eda():
         st.subheader('데이터 분석')
-        df1= pd.read_csv(r"data\who_suicide_statistics.csv")
-        df = pd.read_csv(r"data\who_suicide_statistics.csv")
+        df1= pd.read_csv("data/who_suicide_statistics.csv")
+        df = pd.read_csv("data/who_suicide_statistics.csv")
         df.fillna(0, inplace=True) # suicides_no 열의 결측치를 min 값으로 대체
         df.reset_index(drop=True, inplace=True) # 인덱스 재정의, 기존 인덱스를 제거하고 새로 인덱스를 부여
         
