@@ -78,18 +78,7 @@ def main():
         run_app_home()
 
         # st.markdown("This text is :red[colored red], and this is **:blue[colored]** and bold.")
-        st.subheader('👨‍👩‍👧‍👦 대한민국 10년간 자살현황')
-        st.text(""" 
-        2021년 자살사망자 수는 13,352명으로 전년 대비 157명(1.2%) 증가하였고,
-        1일 평균 자살사망자 수는 36.5명입니다.
-        자살률(인구 10만 명당)은 26.0명으로 전년 대비 0.3명(1.2%) 증가하였습니다.
-        연령별 자살률을 살펴보면 10~30대, 70대의 경우 전년도보다 증가하였으며,
-        40~60대, 80세 이상은 전년도 보다 감소하였습니다. 
-        성별 자살률을 살펴보면 남자는 35.9명(1.2%)으로 전년도 보다 증가하였고,
-        여자는 16.2명(1.4%)으로 전년도 보다 증가하였습니다.
-        남녀 간 자살률 성비는 10대가 1.1배로 가장 낮았으며,
-        80세 이상이 3.7배로 가장 높게 나타났습니다.
-                                                -⚖️한국생명존중희망재단⚖️-""")
+
 
 
         # img_url= 'https://www.irishtimes.com/resizer/pPJML7tkKkfBuXUYNfRzjnQxqjI=/1600x0/filters:format(jpg):quality(70)/cloudfront-eu-central-1.images.arcpublishing.com/irishtimes/XPHTWNJW3THZZ3UTNI3RDXXOPE.jpg'
