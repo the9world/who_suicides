@@ -1,6 +1,4 @@
-![header](https://capsule-render.vercel.app/api?type=cylinder&height=150&text=WHO%20Suicides%20Statistics&fontAlign=50&stroke=FF0000&strokeWidth=2)
-
-
+![header](https://capsule-render.vercel.app/api?section=footer&type=slice&reversal=true&color=gradient&height=170&text=WHO%20Suicides%20Statistics&animation=twinkling&fontSize=53&fontColor=fed&fontAlign=50&fontAlignY=50&textBg=true&&rotate=-3&desc=the9&descSize=20&descAlign=50&descAlignY=15&stroke=9F1FF0&strokeWidth=1&)
 
 # ☑️ WHO Suicides Statistics
 <br><br>
