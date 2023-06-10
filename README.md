@@ -130,7 +130,6 @@ Python Error, Debuging
 </summary>
 
 ```python
-# Streamilt st.tab 기능 error
 tab1, tab2 = st.tabs(df, df1)
    with tab1:
    with tab2:
@@ -140,7 +139,6 @@ Streamlit의 st.tab을 사용하면
 비슷한 기능인 st.columns로 대체하였음.
 """
 col1, col2 = st.columns(2)
-
    with col1:
    with col2:
 ```
@@ -148,13 +146,10 @@ col1, col2 = st.columns(2)
 ```python
 # 1. 미래예측 에러
 
-data= pd.DataFrame(data.groupby(['year'])['suicides_no'].sum()).reset_index()
-data= data.sort_values(by=['suicides_no'], ascending=False)
-data= data.set_index('year')
-
-df_prophet= data.copy()
+df_prophet= df.copy()
 df_prophet.reset_index(drop=False, inplace=True)
 df_prophet.columns = ['ds', 'y']
+df_prophet= df_prophet[:]
 
 m= Prophet()
 m.fit(df_prophet)
@@ -165,31 +160,25 @@ fig= m.plot(forecast)
 
 """ 
 Prophet을 활용한 미래예측에는 YY/MM/DD(년월일) 전부가 필요하지만,
-who_suicides의 year column은 연도만 있는 데이터라서 Prophet에서 error가 발생,
-데이터를 새로 불러서 기존 데이터에 year의 값을 "연도-01월-01일"으로 파싱하여 해결하였다.
+who_suicides의 year column은 "연도" 뿐인 데이터라서 Prophet에서 error가 발생,
+기존 데이터 year column의 값 "연도"에 +"-01-01"을 추가하여 해결하였다.
 """
 
 # 2. 해결
 
-parse = lambda dates: pd.to_datetime(dates, format='%Y')
-   data= pd.read_csv('https://raw.githubusercontent.com/the9world/My_Study/main/data/Z_running_file/who_suicide_statistics.csv',
-   parse_dates=['year'], index_col='year', date_parser=parse)
+df['year'] = df['year'].astype(str) + '-01-01'
 
-   data= pd.DataFrame(data.groupby(['year'])['suicides_no'].sum()).reset_index()
-   data= data.sort_values(by=['suicides_no'], ascending=False)
-   data= data.set_index('year')
+df_prophet= df.copy()
+df_prophet.reset_index(drop=False, inplace=True)
+df_prophet.columns = ['ds', 'y']
+df_prophet= df_prophet[:]
 
-   df_prophet= data.copy()
-   df_prophet.reset_index(drop=False, inplace=True)
-   df_prophet.columns = ['ds', 'y']
-   df_prophet= df_prophet[:]
+m= Prophet()
+m.fit(df_prophet)
+future= m.make_future_dataframe(periods=5, freq='Y')
+forecast= m.predict(future)
 
-   m= Prophet()
-   m.fit(df_prophet)
-   future= m.make_future_dataframe(periods=5, freq='Y')
-   forecast= m.predict(future)
-   
-   fig= m.plot(forecast)
+fig= m.plot(forecast)
 ```
 </details>
 
@@ -290,3 +279,44 @@ import matplotlib.font_manager
 </details>  
 
 ---  
+<<<<<<< HEAD
+=======
+
+
+
+
+px(플로틀리익스프레스) choropleth 지도함수  
+
+프로젝트 정보  
+해당 프로젝트를 진행한 단체나 목적에 대해 소개하고, 개발 기간을 써준다.  
+
+(5) 배포 주소  
+프로젝트가 배포되어 있다면, 해당 주소를 기입해준다.  
+(7) 프로젝트 소개
+진행한 프로젝트에 대해 간단하게 5~10줄 정도 써준다.  
+
+시작 가이드  
+(1) 요구 사항
+누군가가 이 프로젝트를 clone해서 실행하려고 할 때 필요한 요구사항들과 버전들을 적어준다.
+
+(2) 설치 및 실행
+Repository를 clone하고, 패키지 설치, 환경변수 설정, 실행하는 과정에 대한 내용들을 코드로 적어준다.  
+
+
+
+
+
+
+
+|<img src="https://github.com/~~~.png" width="80">|<img src="https://github.com/~~~.png" width="80">|
+|:---:|:---:|
+|[](https://github.com/ImInnocent)|[](https://github.com/dearyeon)|
+|블록체인|프론트엔드|
+
+<h1 align="center"> 🛠 Tech Stack 🛠 </h1>
+<h2 align="center"> 🛠 Tech Stack 🛠 </h2>
+<h3 align="center"> 🛠 Tech Stack 🛠 </h3>
+<h4 align="center"> 🛠 Tech Stack 🛠 </h4>
+<h5 align="center"> 🛠 Tech Stack 🛠 </h5>
+<h6 align="center"> 🛠 Tech Stack 🛠 </h6>   
+>>>>>>> 2be0cda472397f358f654dfdea0b9e934a8f226f
