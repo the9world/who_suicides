@@ -40,16 +40,20 @@ WHO Suicides 데이터를 분석하고 시각화 하여 향후 전망을 예측�
 ✔ 코드설명, 후기(짧고 간결하게 써야함, 내용이 길어질 경우 블로그에 작성한뒤 링크로 연결해주는게 좋다)<br>
 <span style="color:white; font-weight:400;font-size:18px">
 URL Sample Image</span>
-<details><summary> <span style="color:#2D57A9;font-weight:400;font-size:15x">☑️[Click : 펼치기 / 접기]</span>
+<details><summary> 
+<span style="color:#2D57A9;font-weight:400;font-size:15x">
+☑️[Click : 펼치기 / 접기]</span>
 </summary>
 
-![](2023-06-11-01-13-29.png)
+![](2023-06-11-01-13-30.png)
 </details>
 <br>
 
 <span style="color:white; font-weight:400;font-size:18px">
 Sample Image의 Map Code</span>
-<details><summary> <span style="color:#2D57A9;font-weight:400;font-size:15x">☑️[Click : 펼치기 / 접기]</span>
+<details><summary> 
+<span style="color:#2D57A9;font-weight:400;font-size:15x">
+☑️[Click : 펼치기 / 접기]</span>
 </summary>
 <br>
 plotly express의 px.choropleth 함수 사용
@@ -114,7 +118,9 @@ fig4.update_layout( title=
 <span style="color:red; font-weight:600;font-size:30px">
 Python Error, Debuging
 </span>
-<details><summary> <span style="color:#2D57A9;font-weight:500;font-size:16px">☑️[Click : 펼치기 / 접기]</span>
+<details><summary>
+<span style="color:#2D57A9;font-weight:500;font-size:16px">
+☑️[Click : 펼치기 / 접기]</span>
 </summary>
 
 ```python
@@ -178,7 +184,9 @@ EC2 가상환경 Font Error</span>
 <span style="color:#000000;font-weight:600;font-size:16px">
 (출처: https://luvris2.tistory.com/119)
 </span>
-<details><summary> <span style="color:#2D57A9;font-weight:500;font-size:16px">☑️[Click : 펼치기 / 접기]</span>
+<details><summary>
+<span style="color:#2D57A9;font-weight:500;font-size:16px">
+☑️[Click : 펼치기 / 접기]</span>
 </summary>  
 
    - 폰트 관리 유틸리티 설치
