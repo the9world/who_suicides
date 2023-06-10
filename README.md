@@ -124,6 +124,7 @@ Python Error, Debuging
 </summary>
 
 ```python
+# tab 기능 Warning message
 tab1, tab2 = st.tabs(df, df1)
    with tab1:
    with tab2:
