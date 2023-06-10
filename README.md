@@ -1,33 +1,132 @@
-# ☑️ WHO Suicides Statistics
+![header](https://capsule-render.vercel.app/api?type=cylinder&height=150&text=WHO%20Suicides%20Statistics&fontAlign=50&stroke=FF0000&strokeWidth=2)
 
-1. 라이브러리
-   - streamlit, matplotlib, pandas, seaborn, streamlit_extras,  
-plotly, time, prophet
-   - 폰트용 : platform  
+
+
+# ☑️ WHO Suicides Statistics
+<br><br>
+
+프로젝트 정보  
+해당 프로젝트를 진행한 단체나 목적에 대해 소개하고, 개발 기간을 써준다.  
+
+(5) 배포 주소  
+프로젝트가 배포되어 있다면, 해당 주소를 기입해준다.  
+(7) 프로젝트 소개
+진행한 프로젝트에 대해 간단하게 5~10줄 정도 써준다.  
+
+시작 가이드  
+(1) 요구 사항
+누군가가 이 프로젝트를 clone해서 실행하려고 할 때 필요한 요구사항들과 버전들을 적어준다.
+
+(2) 설치 및 실행
+Repository를 clone하고, 패키지 설치, 환경변수 설정, 실행하는 과정에 대한 내용들을 코드로 적어준다.  
+
+
+1. 프로젝트 Description (설명서:기재 사항)
+
+✔ 프로젝트명: WHO Suicides 데이터 분석 및 시각화<br>
+✔ 어떤 프로젝트인지 소개:  
+WHO Suicides 데이터를 분석하고 시각화 하여 향후 전망을 예측한다.  <br>
+✔ 디렉토리 구조<br>
+
+2. 프로젝트 정보
+
+✔ 설치방법 (Getting Started: 시작 / Installation: 설치)  
+✔ 컴파일 방법, 사용 환경, 브라우저 서포트, 개발스택, 구현 목록(명세)  
+✔ 간단한 사용 방법 및 예제:<br>
+
+3. 프로젝트 결과물
+
+✔ 기능별 사진 / 영상:<br>
+✔ 코드설명, 후기(짧고 간결하게 써야함, 내용이 길어질 경우 블로그에 작성한뒤 링크로 연결해주는게 좋다)<br>
+<span style="color:white; font-weight:400;font-size:18px">
+URL Sample Image</span>
+<details><summary> <span style="color:#2D57A9;font-weight:400;font-size:15x">☑️[Click : 펼치기 / 접기]</span>
+</summary>
+
+![](2023-06-11-01-13-29.png)
+</details>
+<br>
+
+<span style="color:white; font-weight:400;font-size:18px">
+Sample Image의 Map Code</span>
+<details><summary> <span style="color:#2D57A9;font-weight:400;font-size:15x">☑️[Click : 펼치기 / 접기]</span>
+</summary>
+<br>
+plotly express의 px.choropleth 함수 사용
+
+```python
+count_max_sui=pd.DataFrame(df.groupby(['year','country'])['suicides_no'].sum().reset_index())
+
+fig4 = px.choropleth(count_max_sui.sort_values("year"), 
+                        locations = 'country',
+                        color = "suicides_no",
+                        color_continuous_scale = 'bluyl',
+                        locationmode='country names',
+                        animation_frame= 'year')
+fig4.update_layout( title=
+               {'text': 'World Suicides Map',
+                     'y': 1.0,
+                     'x': 0.15,
+                     'yanchor': 'top',
+                     'font': {'size': 45}        }     )
+```
+
+</details>
+<br>
+
+
+4. Contribute (기여자)
+
+✔ 다른 사람들이 코드에 Contribute하기 쉽도록 방법 설명  
+✔ 어떤 류의 Contribute를 원하는지 또는 Contributing 규칙 등을 적을 수도 있다.
+
+5. LICENSE
+
+✔ 라이선스 : 저작물의 수정 배포에 대한 권한이나 저작권들에 대한 조항들  
+✔ 보통 MIT License를 많이 사용하고 BSD 라이선스도 많이 사용한다
+
+6. 외부리소스 정보
+
+✔ 프로젝트에 포함된 외부 코드나 리소스 정보(각각의 출처 및 배포 라이선스):  
+배포 URL: http://ec2-15-165-74-90.ap-northeast-2.compute.amazonaws.com:9999/  
+7. Code Status
+
+✔ Shield라는 것을 사용하여 [build | passing]과 같은 정보를 줄 수 있다.  
+✔ 프로젝트가 커질수록 도움이 되는 부분  
+<br><br>
 
 ## Skills
+## Platforms
+<img src="https://img.shields.io/badge/windows-0078D6?style=for-the-badge&logo=windows&logoColor=white">
+<img src="https://img.shields.io/badge/linux-FCC624?style=for-the-badge&logo=linux&logoColor=black">
+<img src="https://img.shields.io/badge/ANACONDA-44A833?style=badge&logo=anaconda&logoColor=white">
+<img src="https://img.shields.io/badge/AMAZON-AWS-232F3E?style=badge&logo=amazonaws&logoColor=white">
+<img src="https://img.shields.io/badge/GITHUB-181717?style=badge&logo=github&logoColor=white">
 
-## Platforms & Languages
-<img src="https://img.shields.io/badge/windows-0078D6?style=for-the-badge&logo=python&logoColor=white"><img src="https://img.shields.io/badge/linux-FCC624?style=for-the-badge&logo=linux&logoColor=black"><img src="https://img.shields.io/badge/anaconda-44A833?style=for-the-badge&logo=python&logoColor=white"><img src="https://img.shields.io/badge/amazonaws-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white"><img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white">
-<img src="https://img.shields.io/badge/python-3776AB?style=for-the-badge&logo=python&logoColor=white">
+##  Languages & Tools & Library
+<img src="https://img.shields.io/badge/PYTHON-3776AB?style=for-the-badge&logo=python&logoColor=white">
+<img src="https://img.shields.io/badge/GIT-F05032?style=badge&logo=git&logoColor=white">
+<img src="https://img.shields.io/badge/GOOGLE-COLAB-F9AB00?style=badge&logo=googlecolab&logoColor=white">
+<img src="https://img.shields.io/badge/STREAMLIT-FF4B4B?style=badge&logo=streamlit&logoColor=white">
+<img src="https://img.shields.io/badge/PLOTLY-3F4F75?style=badge&logo=plotly&logoColor=white">
+<img src="https://img.shields.io/badge/SEABORN-150458?style=badge&logo=기술스택아이콘&logoColor=white">
+<img src="https://img.shields.io/badge/MATPLOTLIB-D70F64?style=badge&logo=기술스택아이콘&logoColor=white">
+<img src="https://img.shields.io/badge/PANDAS-E40000?style=badge&logo=기술스택아이콘&logoColor=white">
+<img src="https://img.shields.io/badge/PROPHET-FF7300?style=badge&logo=기술스택아이콘&logoColor=white">
+<br><br>
 
-## Tools
-<img src="https://img.shields.io/badge/git-F05032?style=for-the-badge&logo=git&logoColor=white"><img src="https://img.shields.io/badge/googlecolab-F9AB00?style=for-the-badge&logo=git&logoColor=white"><img src="https://img.shields.io/badge/streamlit-FF4B4B?style=for-the-badge&logo=git&logoColor=white"><img src="https://img.shields.io/badge/plotly-3F4F75?style=for-the-badge&logo=git&logoColor=white">  
-
-   1. 라이브러리
-      - streamlit, matplotlib, pandas, seaborn, streamlit_extras, 
-   plotly, time, prophet
-      - 폰트용 : platform 
-
-   2. 출처
-      1.  사이드바 이미지출처: 연작가
-      2.  WHO Sucides 데이터 출처 :  
-Kaggle : https://www.kaggle.com/
+- 출처<br>
+  1.  사이드바 이미지출처:  
+  연작가 : https://www.instagram.com/yeon.writer.1983/
+  2.  데이터 출처 :  
+  Kaggle : https://www.kaggle.com/
+<br><br>
 
 
-
-## Python Error, Debuging
-<details><summary>[Click : 펼치기 / 접기]
+<span style="color:red; font-weight:600;font-size:30px">
+Python Error, Debuging
+</span>
+<details><summary> <span style="color:#2D57A9;font-weight:500;font-size:16px">☑️[Click : 펼치기 / 접기]</span>
 </summary>
 
 ```python
@@ -95,9 +194,14 @@ parse = lambda dates: pd.to_datetime(dates, format='%Y')
 </details>
 
 ---
+<br>
+<span style="color:red;font-weight:600;font-size:30px">
+EC2 가상환경 Font Error</span>  
 
-## EC2 가상환경 font error (출처: https://luvris2.tistory.com/119)
-<details><summary> [Click : 펼치기 / 접기]
+<span style="color:#000000;font-weight:600;font-size:16px">
+(출처: https://luvris2.tistory.com/119)
+</span>
+<details><summary> <span style="color:#2D57A9;font-weight:500;font-size:16px">☑️[Click : 펼치기 / 접기]</span>
 </summary>  
 
    - 폰트 관리 유틸리티 설치
@@ -186,41 +290,3 @@ import matplotlib.font_manager
 </details>  
 
 ---  
-
-
-
-
-px(플로틀리익스프레스) choropleth 지도함수  
-
-프로젝트 정보  
-해당 프로젝트를 진행한 단체나 목적에 대해 소개하고, 개발 기간을 써준다.  
-
-(5) 배포 주소  
-프로젝트가 배포되어 있다면, 해당 주소를 기입해준다.  
-(7) 프로젝트 소개
-진행한 프로젝트에 대해 간단하게 5~10줄 정도 써준다.  
-
-시작 가이드  
-(1) 요구 사항
-누군가가 이 프로젝트를 clone해서 실행하려고 할 때 필요한 요구사항들과 버전들을 적어준다.
-
-(2) 설치 및 실행
-Repository를 clone하고, 패키지 설치, 환경변수 설정, 실행하는 과정에 대한 내용들을 코드로 적어준다.  
-
-
-
-
-
-
-
-|<img src="https://github.com/~~~.png" width="80">|<img src="https://github.com/~~~.png" width="80">|
-|:---:|:---:|
-|[](https://github.com/ImInnocent)|[](https://github.com/dearyeon)|
-|블록체인|프론트엔드|
-
-<h1 align="center"> 🛠 Tech Stack 🛠 </h1>
-<h2 align="center"> 🛠 Tech Stack 🛠 </h2>
-<h3 align="center"> 🛠 Tech Stack 🛠 </h3>
-<h4 align="center"> 🛠 Tech Stack 🛠 </h4>
-<h5 align="center"> 🛠 Tech Stack 🛠 </h5>
-<h6 align="center"> 🛠 Tech Stack 🛠 </h6>   
