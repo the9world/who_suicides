@@ -97,22 +97,10 @@ fig4.update_layout( title=
 
 ## Skills
 ## Platforms
-<img src="https://img.shields.io/badge/windows-0078D6?style=for-the-badge&logo=windows&logoColor=white">
-<img src="https://img.shields.io/badge/linux-FCC624?style=for-the-badge&logo=linux&logoColor=black">
-<img src="https://img.shields.io/badge/ANACONDA-44A833?style=badge&logo=anaconda&logoColor=white">
-<img src="https://img.shields.io/badge/AMAZON-AWS-232F3E?style=badge&logo=amazonaws&logoColor=white">
-<img src="https://img.shields.io/badge/GITHUB-181717?style=badge&logo=github&logoColor=white">
+<img src="https://img.shields.io/badge/windows-0078D6?style=for-the-badge&logo=windows&logoColor=white"><img src="https://img.shields.io/badge/linux-FCC624?style=for-the-badge&logo=linux&logoColor=black"><img src="https://img.shields.io/badge/ANACONDA-44A833?style=badge&logo=anaconda&logoColor=white"><img src="https://img.shields.io/badge/AMAZON-AWS-232F3E?style=badge&logo=amazonaws&logoColor=white"><img src="https://img.shields.io/badge/GITHUB-181717?style=badge&logo=github&logoColor=white">
 
 ##  Languages & Tools & Library
-<img src="https://img.shields.io/badge/PYTHON-3776AB?style=for-the-badge&logo=python&logoColor=white">
-<img src="https://img.shields.io/badge/GIT-F05032?style=badge&logo=git&logoColor=white">
-<img src="https://img.shields.io/badge/GOOGLE-COLAB-F9AB00?style=badge&logo=googlecolab&logoColor=white">
-<img src="https://img.shields.io/badge/STREAMLIT-FF4B4B?style=badge&logo=streamlit&logoColor=white">
-<img src="https://img.shields.io/badge/PLOTLY-3F4F75?style=badge&logo=plotly&logoColor=white">
-<img src="https://img.shields.io/badge/SEABORN-150458?style=badge&logo=기술스택아이콘&logoColor=white">
-<img src="https://img.shields.io/badge/MATPLOTLIB-D70F64?style=badge&logo=기술스택아이콘&logoColor=white">
-<img src="https://img.shields.io/badge/PANDAS-E40000?style=badge&logo=기술스택아이콘&logoColor=white">
-<img src="https://img.shields.io/badge/PROPHET-FF7300?style=badge&logo=기술스택아이콘&logoColor=white">
+<img src="https://img.shields.io/badge/PYTHON-3776AB?style=for-the-badge&logo=python&logoColor=white"><img src="https://img.shields.io/badge/GIT-F05032?style=badge&logo=git&logoColor=white"><img src="https://img.shields.io/badge/GOOGLE-COLAB-F9AB00?style=badge&logo=googlecolab&logoColor=white"><img src="https://img.shields.io/badge/STREAMLIT-FF4B4B?style=badge&logo=streamlit&logoColor=white"><img src="https://img.shields.io/badge/PLOTLY-3F4F75?style=badge&logo=plotly&logoColor=white"><br><img src="https://img.shields.io/badge/SEABORN-150458?style=badge&logo=기술스택아이콘&logoColor=white"><img src="https://img.shields.io/badge/MATPLOTLIB-D70F64?style=badge&logo=기술스택아이콘&logoColor=white"><img src="https://img.shields.io/badge/PANDAS-E40000?style=badge&logo=기술스택아이콘&logoColor=white"><img src="https://img.shields.io/badge/PROPHET-FF7300?style=badge&logo=기술스택아이콘&logoColor=white">
 <br><br>
 
 - 출처<br>
@@ -279,44 +267,3 @@ import matplotlib.font_manager
 </details>  
 
 ---  
-<<<<<<< HEAD
-=======
-
-
-
-
-px(플로틀리익스프레스) choropleth 지도함수  
-
-프로젝트 정보  
-해당 프로젝트를 진행한 단체나 목적에 대해 소개하고, 개발 기간을 써준다.  
-
-(5) 배포 주소  
-프로젝트가 배포되어 있다면, 해당 주소를 기입해준다.  
-(7) 프로젝트 소개
-진행한 프로젝트에 대해 간단하게 5~10줄 정도 써준다.  
-
-시작 가이드  
-(1) 요구 사항
-누군가가 이 프로젝트를 clone해서 실행하려고 할 때 필요한 요구사항들과 버전들을 적어준다.
-
-(2) 설치 및 실행
-Repository를 clone하고, 패키지 설치, 환경변수 설정, 실행하는 과정에 대한 내용들을 코드로 적어준다.  
-
-
-
-
-
-
-
-|<img src="https://github.com/~~~.png" width="80">|<img src="https://github.com/~~~.png" width="80">|
-|:---:|:---:|
-|[](https://github.com/ImInnocent)|[](https://github.com/dearyeon)|
-|블록체인|프론트엔드|
-
-<h1 align="center"> 🛠 Tech Stack 🛠 </h1>
-<h2 align="center"> 🛠 Tech Stack 🛠 </h2>
-<h3 align="center"> 🛠 Tech Stack 🛠 </h3>
-<h4 align="center"> 🛠 Tech Stack 🛠 </h4>
-<h5 align="center"> 🛠 Tech Stack 🛠 </h5>
-<h6 align="center"> 🛠 Tech Stack 🛠 </h6>   
->>>>>>> 2be0cda472397f358f654dfdea0b9e934a8f226f
