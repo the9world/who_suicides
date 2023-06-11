@@ -4,15 +4,44 @@
 <br><br>
 
 프로젝트 정보  
-해당 프로젝트를 진행한 단체나 목적에 대해 소개하고, 개발 기간을 써준다.  
+과거 WHO Suicidies 데이터를 토대로 predict the future 결과와  
+현시점 실제 자살률 데이터와 비교하여 어느정도 예측이 정확한지,  
+예측 데이터와 현재 데이터를 비교하여 예측 값에 오차가 있다면,  
+어떤 요인들이 오차에 영향을 끼쳤는지 그 요인들을 분석하여,  
+자살률 감소에 도움이 될 수 있는지 알아보고자 WHO Suicides 데이터를 분석하였음.
 
-(5) 배포 주소  
-프로젝트가 배포되어 있다면, 해당 주소를 기입해준다.  
-(7) 프로젝트 소개
-진행한 프로젝트에 대해 간단하게 5~10줄 정도 써준다.  
+배포 주소(URL)  
+http://ec2-15-165-74-90.ap-northeast-2.compute.amazonaws.com:9999/  
+
+(7) 프로젝트 소개  
+분석한 데이터는 1979년 ~ 2016년 국가별, 연령대별, 남녀별 자살률 데이터로  
+Kaggle에서 수집하여 Python으로 Pandas를 사용하여 데이터를 분석하고,  
+Seaborn, Matplotlib, Plotly 등을 사용하여 그래프 시각화 하였고,  
+FaceBook Prophet을 사용하여 미래 예측하였으며,  
+Streamlit과 AWS EC2 Anacond 가상환경에서 테스트 및 배포하였음.
+
+Progress period  
+기간 : 2023-06-05 ~ 2023-06-07 (3일)  
+1일차 : 데이터 분석, 시각화 및 미래예측  
+2일차 : streamlit 코드 작성 및 Test & AWS EC2 가상환경에서 TEST  
+3일차 : EC2 최종점검 및 README.MD 작성
+
+Layout
+WHO Suicdes 공간은 
+
+기본 상하단의 Navigation을 고정하고 아이보리색 바탕에 진회색의 텍스트를 사용했으며, 민트색으로 포인트를 주었습니다.
+
+Color Map의 색조합을 사용하여 깔끔한 디자인으로 구현되었습니다.
 
 시작 가이드  
-(1) 요구 사항
+(1) 사용한 프로그램 및 요구 사항
+- <img alt="Html" src ="https://img.shields.io/badge/Python-3.9.16-red&logo=ff&logoColor=fed"/>  Python(Version 3.9.16)  
+https://img.shields.io/badge/github-GIVEME--STAR-red  
+https://img.shields.io/badge/style-plastic-red?style=plastic  
+https://img.shields.io/badge/style-plastic-red?style=plastic  
+https://img.shields.io/appveyor/build/the9world/who_suicides?color=%23A5D6A7&label=Python&logo=ffffff&logoColor=red
+
+
 누군가가 이 프로젝트를 clone해서 실행하려고 할 때 필요한 요구사항들과 버전들을 적어준다.
 
 (2) 설치 및 실행
