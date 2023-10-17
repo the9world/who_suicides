@@ -15,7 +15,7 @@ def run_app_ml():
             
             dateparse = lambda dates: pd.to_datetime(dates, format='%Y')
             plt.rcParams['font.family'] = 'Malgun Gothic'
-            data = pd.read_csv('https://raw.githubusercontent.com/the9world/My_Study/main/data/Z_running_file/who_suicide_statistics.csv', parse_dates=['year'], index_col='year', date_parser=dateparse)
+            data = pd.read_csv('data\who_suicide_statistics.csv' , parse_dates=['year'], index_col='year', date_parser=dateparse)
             data.drop('population', axis=1, inplace=True)
             data.fillna(0, inplace=True)
             data = data.loc[(data.index >= '1985-01-01') & (data.index < '2016-01-01')]
