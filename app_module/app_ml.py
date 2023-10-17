@@ -14,7 +14,6 @@ def run_app_ml():
             st.success('World 미래예측')#
             
             dateparse = lambda dates: pd.to_datetime(dates, format='%Y')
-            plt.rcParams['font.family'] = 'Malgun Gothic'
             data = pd.read_csv('./data/who_suicide_statistics.csv' , parse_dates=['year'], index_col='year', date_parser=dateparse)
             data.drop('population', axis=1, inplace=True)
             data.fillna(0, inplace=True)
