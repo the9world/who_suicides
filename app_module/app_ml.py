@@ -11,7 +11,7 @@ def run_app_ml():
         tab1, tab2= st.tabs(["World, predict the future ", "Korea, predict the future"])
         # 데이터 로딩 함수는 여기에!
         with tab1:
-            st.success('World 미래예측')
+            st.success('World 미래예측')#
             
             dateparse = lambda dates: pd.to_datetime(dates, format='%Y')
             plt.rcParams['font.family'] = 'Malgun Gothic'
