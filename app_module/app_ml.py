@@ -49,7 +49,7 @@ def run_app_ml():
             
             dateparse_korea = lambda dates: pd.to_datetime(dates, format='%Y') # 연도만 가지고 미래예측이 안 되어서 월일을 포맷팅해서 생성하였음
             data_korea= pd.read_csv('https://raw.githubusercontent.com/the9world/My_Study/main/data/Z_running_file/who_suicide_statistics.csv', parse_dates=['year'], index_col='year',date_parser=dateparse_korea)
-            data_korea.fillna(0, inplace=True)
+            data_korea.fillna(0,  inplace=True)
             data_korea= data_korea.reset_index()
             data_korea= pd.DataFrame(data_korea.groupby(['country','year'])['suicides_no'].sum()).reset_index()
             data_korea= data_korea.sort_values(by=['suicides_no'],ascending=False)
