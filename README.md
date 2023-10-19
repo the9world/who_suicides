@@ -70,6 +70,42 @@ Sample Image의 Map Code</span>
 ☑️[Click : 펼치기 / 접기]</span>
 </summary>
 <br>
+
+seaborn과 plotly를 활용하여 파이차트와 lineplot등을 생성
+```python
+
+
+        if st.checkbox( '남녀 자살률 비교 ', value=True):
+            # 남녀 자살 비교, 세계 : 한국
+            fig_sex = go.Figure(data=[
+                go.Pie(labels=df['sex'], values=df['suicides_no'], textinfo='label+percent',
+                    name='world_sex', domain={'x': [0, 0.45]},
+                    marker=dict(colors=['hotpink', 'purple'])),
+                go.Pie(labels=df_kor['sex'], values=df_kor['suicides_no'], textinfo='label+percent',
+                    name='kor_sex', domain={'x': [0.55, 1]},
+                    marker=dict(colors=['hotpink', 'purple']))])
+
+            fig_sex.update_layout(
+                title={'text': "sex suicides", 'y': 0.95, 'x': 0.5, 'xanchor': 'right', 'yanchor': 'top'},
+                annotations=[dict(text="""<span style='font-weight: bold; color: #B3A7DC'>↙World
+                                  <span style='font-weight: bold; color: #84A7D3'>     Korea↘</span>""",
+                                x=0.5, y=0.95, font_size=25, showarrow=False)])
+
+            st.plotly_chart(fig_sex)
+
+        with col2:
+            st.subheader("2️⃣World & Korea 자살 비교")
+            # 세계 데이터 평균과 한국 데이터 연도별 자살 비교
+            fig_world_korea, ax = plt.subplots()
+            sns.lineplot(data=df, x='year', y='suicides_no', color='r', label='World')
+            sns.lineplot(data=df_kor, x='year', y='suicides_no', color='black', label='Korea')
+            ax.set_title('World & Korea', fontsize=25, color='#959EA2')
+            ax.legend()
+
+            st.pyplot(fig_world_korea)
+```
+
+  
 plotly express의 px.choropleth 함수 사용
 
 ```python
