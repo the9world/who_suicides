@@ -20,10 +20,10 @@ FaceBook Prophet을 사용하여 미래 예측하였으며,
 Streamlit과 AWS EC2 Anaconda 가상환경에서 테스트 및 배포하였음.
 
 ## 3. Progress period  
-✔ 기간 : 2023-06-05 ~ 2023-06-07 (3일)  
-1일차 : 데이터 분석, 시각화 및 미래예측  
-2일차 : streamlit 코드 작성 및 Test & AWS EC2 가상환경에서 TEST  
-3일차 : EC2 최종점검 및 README.MD 작성
+✔ 기간 : 2023-06-05 ~ 2023-06-11 (7일)  
+1~3일차 : 데이터 분석, 시각화 및 미래예측  
+4~5일차 : streamlit 코드 작성 및 Test & AWS EC2 가상환경에서 TEST  
+6~7일차 : EC2 최종점검 및 README.MD 작성
 
 ## 4. 배포 주소(URL)  
 ✔ http://ec2-15-165-74-90.ap-northeast-2.compute.amazonaws.com:9999/  
