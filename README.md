@@ -3,7 +3,6 @@
 # ☑️ WHO Suicides Statistics
 <br><br>
 ![2023-10-19 16 59 39 home](https://github.com/the9world/who_suicides/assets/130967390/7aa1278a-3f41-438c-9373-66d61fdfb93b)
-<img src="https://github.com/the9world/who_suicides/assets/130967390/7aa1278a-3f41-438c-9373-66d61fdfb93b" width="500" height="700"/>
 
 ## 1. 프로젝트 정보  
 ✔ 과거 WHO Suicidies 데이터를 토대로 predict the future 결과와  
