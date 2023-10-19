@@ -130,7 +130,7 @@ fig4.update_layout( title=
 <br>
 <br>
 <br>
-<br>
+<details>  </details>
 
 
 <span style="color:red; font-weight:600;font-size:30px">
