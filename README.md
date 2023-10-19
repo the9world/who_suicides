@@ -50,21 +50,16 @@ WHO Suicdes 내용이 다소 네거티브하고 무거운 주제의 데이터인
 <br><br>
 
 
-### Graph Image
-<img src="https://github.com/the9world/who_suicides/assets/130967390/a093298e-cf26-4361-917d-cdb31310e944" width="330" height="480"/>
-<img src="https://github.com/the9world/who_suicides/assets/130967390/fbb962e1-3a04-453f-9e1e-2bb6b8b00676" width="330" height="480"/>
-<img src="https://github.com/the9world/who_suicides/assets/130967390/ad8cada5-b6c1-42bc-9550-7f6593dd2ff4" width="330" height="480"/>
-
-
-
 <span style="color:white; font-weight:400;font-size:18px">
-URL Sample Image</span>
+### URL Sample Image</span>
 <details><summary> 
 <span style="color:#2D57A9;font-weight:400;font-size:15x">
 ☑️[Click : 펼치기 / 접기]</span>
 </summary>
 
-![](2023-06-11-01-13-30.png)
+<img src="https://github.com/the9world/who_suicides/assets/130967390/a093298e-cf26-4361-917d-cdb31310e944" width="330" height="480"/>
+<img src="https://github.com/the9world/who_suicides/assets/130967390/fbb962e1-3a04-453f-9e1e-2bb6b8b00676" width="330" height="480"/>
+<img src="https://github.com/the9world/who_suicides/assets/130967390/ad8cada5-b6c1-42bc-9550-7f6593dd2ff4" width="330" height="480"/>
 </details>
 <br>
 
