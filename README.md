@@ -51,15 +51,15 @@ WHO Suicdes 내용이 다소 네거티브하고 무거운 주제의 데이터인
 
 
 <span style="color:white; font-weight:400;font-size:18px">
-### URL Sample Image</span>
+URL Sample Image</span>
 <details><summary> 
 <span style="color:#2D57A9;font-weight:400;font-size:15x">
 ☑️[Click : 펼치기 / 접기]</span>
 </summary>
 
 <img src="https://github.com/the9world/who_suicides/assets/130967390/a093298e-cf26-4361-917d-cdb31310e944" width="330" height="480"/>
-<img src="https://github.com/the9world/who_suicides/assets/130967390/fbb962e1-3a04-453f-9e1e-2bb6b8b00676" width="330" height="480"/>
 <img src="https://github.com/the9world/who_suicides/assets/130967390/ad8cada5-b6c1-42bc-9550-7f6593dd2ff4" width="330" height="480"/>
+<img src="https://github.com/the9world/who_suicides/assets/130967390/fbb962e1-3a04-453f-9e1e-2bb6b8b00676" width="330" height="480"/>
 </details>
 <br>
 
@@ -91,23 +91,6 @@ fig4.update_layout( title=
 
 </details>
 <br>
-
-5. LICENSE
-
-✔ 라이선스 : 저작물의 수정 배포에 대한 권한이나 저작권들에 대한 조항들  
-✔ 보통 MIT License를 많이 사용하고 BSD 라이선스도 많이 사용한다
-
-6. 외부리소스 정보
-
-✔ 프로젝트에 포함된 외부 코드나 리소스 정보(각각의 출처 및 배포 라이선스):  
-배포 URL: http://ec2-15-165-74-90.ap-northeast-2.compute.amazonaws.com:9999/  
-7. Code Status
-
-✔ Shield라는 것을 사용하여 [build | passing]과 같은 정보를 줄 수 있다.  
-✔ 프로젝트가 커질수록 도움이 되는 부분  
-<br><br>
-
-
 
 
 <span style="color:red; font-weight:600;font-size:30px">
