@@ -126,10 +126,9 @@ fig4.update_layout( title=
 ```
 
 </details>
-<br>
-<br>
-<br>
-<details>  </details>
+<br><br>
+<br><br>
+<br><br>
 
 
 <span style="color:red; font-weight:600;font-size:30px">
