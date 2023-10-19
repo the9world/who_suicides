@@ -5,7 +5,9 @@
 ![2023-10-19 16 13 08 who graph](https://github.com/the9world/who_suicides/assets/130967390/a093298e-cf26-4361-917d-cdb31310e944)
 ![2023-10-19 16 22 07 map](https://github.com/the9world/who_suicides/assets/130967390/fbb962e1-3a04-453f-9e1e-2bb6b8b00676)
 ![2023-10-19 16 18 30 future](https://github.com/the9world/who_suicides/assets/130967390/ad8cada5-b6c1-42bc-9550-7f6593dd2ff4)
+[![who graph](https://github.com/the9world/who_suicides/assets/130967390/a093298e-cf26-4361-917d-cdb31310e944)](https://github.com/the9world/who_suicides/assets/130967390/a093298e-cf26-4361-917d-cdb31310e944)
 
+<img src="https:https://github.com/the9world/who_suicides/assets/130967390/a093298e-cf26-4361-917d-cdb31310e944"width="200" height="200"/>
 
 
 ## 1. 프로젝트 정보  
