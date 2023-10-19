@@ -40,9 +40,6 @@ WHO Suicdes 내용이 다소 네거티브하고 무거운 주제의 데이터인
 ### ✔ Languages & Tools & Library  
 <img src="https://img.shields.io/badge/PYTHON-3776AB?style=for-the-badge&logo=python&logoColor=white"><img src="https://img.shields.io/badge/GIT-F05032?style=badge&logo=git&logoColor=white"><img src="https://img.shields.io/badge/GOOGLE-COLAB-F9AB00?style=badge&logo=googlecolab&logoColor=white"><img src="https://img.shields.io/badge/STREAMLIT-FF4B4B?style=badge&logo=streamlit&logoColor=white"><img src="https://img.shields.io/badge/PLOTLY-3F4F75?style=badge&logo=plotly&logoColor=white"><br><img src="https://img.shields.io/badge/SEABORN-150458?style=badge&logoColor=white"><img src="https://img.shields.io/badge/MATPLOTLIB-D70F64?style=badge&logoColor=white"><img src="https://img.shields.io/badge/PANDAS-E40000?style=badge&logoColor=white"><img src="https://img.shields.io/badge/PROPHET-FF7300?style=badge&logoColor=white">
 <br><br>
-
-시작 가이드  
-(1) 사용한 프로그램 및 요구 사항  
 <img alt="Html" src ="https://img.shields.io/badge/Python-3.9.16-red&logo=ff&logoColor=fed"/>
 
 - 출처<br>
@@ -52,31 +49,14 @@ WHO Suicdes 내용이 다소 네거티브하고 무거운 주제의 데이터인
   Kaggle : https://www.kaggle.com/
 <br><br>
 
+
+### Graph Image
 <img src="https://github.com/the9world/who_suicides/assets/130967390/a093298e-cf26-4361-917d-cdb31310e944" width="330" height="480"/>
 <img src="https://github.com/the9world/who_suicides/assets/130967390/fbb962e1-3a04-453f-9e1e-2bb6b8b00676" width="330" height="480"/>
 <img src="https://github.com/the9world/who_suicides/assets/130967390/ad8cada5-b6c1-42bc-9550-7f6593dd2ff4" width="330" height="480"/>
 
-(2) 설치 및 실행
-Repository를 clone하고, 패키지 설치, 환경변수 설정, 실행하는 과정에 대한 내용들을 코드로 적어준다.  
 
 
-1. 프로젝트 Description (설명서:기재 사항)
-
-✔ 프로젝트명: WHO Suicides 데이터 분석 및 시각화<br>
-✔ 어떤 프로젝트인지 소개:  
-WHO Suicides 데이터를 분석하고 시각화 하여 향후 전망을 예측한다.  <br>
-✔ 디렉토리 구조<br>
-
-2. 프로젝트 정보
-
-✔ 설치방법 (Getting Started: 시작 / Installation: 설치)  
-✔ 컴파일 방법, 사용 환경, 브라우저 서포트, 개발스택, 구현 목록(명세)  
-✔ 간단한 사용 방법 및 예제:<br>
-
-3. 프로젝트 결과물
-
-✔ 기능별 사진 / 영상:<br>
-✔ 코드설명, 후기(짧고 간결하게 써야함, 내용이 길어질 경우 블로그에 작성한뒤 링크로 연결해주는게 좋다)<br>
 <span style="color:white; font-weight:400;font-size:18px">
 URL Sample Image</span>
 <details><summary> 
