@@ -3,9 +3,9 @@
 # ☑️ WHO Suicides Statistics
 <br><br>
 
-<img src="https://github.com/the9world/who_suicides/assets/130967390/a093298e-cf26-4361-917d-cdb31310e944" width="400" height="500"/>
-<img src="https://github.com/the9world/who_suicides/assets/130967390/fbb962e1-3a04-453f-9e1e-2bb6b8b00676" width="400" height="500"/>
-<img src="https://github.com/the9world/who_suicides/assets/130967390/ad8cada5-b6c1-42bc-9550-7f6593dd2ff4" width="400" height="500"/>
+<img src="https://github.com/the9world/who_suicides/assets/130967390/a093298e-cf26-4361-917d-cdb31310e944" width="350" height="480"/>
+<img src="https://github.com/the9world/who_suicides/assets/130967390/fbb962e1-3a04-453f-9e1e-2bb6b8b00676" width="350" height="480"/>
+<img src="https://github.com/the9world/who_suicides/assets/130967390/ad8cada5-b6c1-42bc-9550-7f6593dd2ff4" width="350" height="480"/>
 
 ## 1. 프로젝트 정보  
 ✔ 과거 WHO Suicidies 데이터를 토대로 predict the future 결과와  
