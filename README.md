@@ -117,12 +117,6 @@ fig4.update_layout( title=
 </details>
 <br>
 
-
-4. Contribute (기여자)
-
-✔ 다른 사람들이 코드에 Contribute하기 쉽도록 방법 설명  
-✔ 어떤 류의 Contribute를 원하는지 또는 Contributing 규칙 등을 적을 수도 있다.
-
 5. LICENSE
 
 ✔ 라이선스 : 저작물의 수정 배포에 대한 권한이나 저작권들에 대한 조항들  
