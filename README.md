@@ -2,10 +2,8 @@
 
 # ☑️ WHO Suicides Statistics
 <br><br>
-
-<img src="https://github.com/the9world/who_suicides/assets/130967390/a093298e-cf26-4361-917d-cdb31310e944" width="350" height="480"/>
-<img src="https://github.com/the9world/who_suicides/assets/130967390/fbb962e1-3a04-453f-9e1e-2bb6b8b00676" width="350" height="480"/>
-<img src="https://github.com/the9world/who_suicides/assets/130967390/ad8cada5-b6c1-42bc-9550-7f6593dd2ff4" width="350" height="480"/>
+![2023-10-19 16 59 39 home](https://github.com/the9world/who_suicides/assets/130967390/7aa1278a-3f41-438c-9373-66d61fdfb93b)
+<img src="https://github.com/the9world/who_suicides/assets/130967390/7aa1278a-3f41-438c-9373-66d61fdfb93b" width="500" height="700"/>
 
 ## 1. 프로젝트 정보  
 ✔ 과거 WHO Suicidies 데이터를 토대로 predict the future 결과와  
@@ -31,7 +29,6 @@ Streamlit과 AWS EC2 Anaconda 가상환경에서 테스트 및 배포하였음.
 ## 4. 배포 주소(URL)  
 ✔ http://ec2-15-165-74-90.ap-northeast-2.compute.amazonaws.com:9999/  
 
-
 ## 5. Layout
 WHO Suicdes 내용이 다소 네거티브하고 무거운 주제의 데이터인 만큼  
 페이지를 전체적으로 다채롭고 다양한 색상의 플롯들과  
@@ -49,8 +46,6 @@ WHO Suicdes 내용이 다소 네거티브하고 무거운 주제의 데이터인
 (1) 사용한 프로그램 및 요구 사항  
 <img alt="Html" src ="https://img.shields.io/badge/Python-3.9.16-red&logo=ff&logoColor=fed"/>
 
-누군가가 이 프로젝트를 clone해서 실행하려고 할 때 필요한 요구사항들과 버전들을 적어준다.
-
 - 출처<br>
   1.  사이드바 이미지출처:  
   연작가 : https://www.instagram.com/yeon.writer.1983/
@@ -58,6 +53,9 @@ WHO Suicdes 내용이 다소 네거티브하고 무거운 주제의 데이터인
   Kaggle : https://www.kaggle.com/
 <br><br>
 
+<img src="https://github.com/the9world/who_suicides/assets/130967390/a093298e-cf26-4361-917d-cdb31310e944" width="330" height="480"/>
+<img src="https://github.com/the9world/who_suicides/assets/130967390/fbb962e1-3a04-453f-9e1e-2bb6b8b00676" width="330" height="480"/>
+<img src="https://github.com/the9world/who_suicides/assets/130967390/ad8cada5-b6c1-42bc-9550-7f6593dd2ff4" width="330" height="480"/>
 
 (2) 설치 및 실행
 Repository를 clone하고, 패키지 설치, 환경변수 설정, 실행하는 과정에 대한 내용들을 코드로 적어준다.  
