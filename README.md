@@ -7,8 +7,9 @@
 ![2023-10-19 16 18 30 future](https://github.com/the9world/who_suicides/assets/130967390/ad8cada5-b6c1-42bc-9550-7f6593dd2ff4)
 [![who graph](https://github.com/the9world/who_suicides/assets/130967390/a093298e-cf26-4361-917d-cdb31310e944)](https://github.com/the9world/who_suicides/assets/130967390/a093298e-cf26-4361-917d-cdb31310e944)
 
-<img src="https://github.com/the9world/who_suicides/assets/130967390/a093298e-cf26-4361-917d-cdb31310e944"width="200" height="200"/>
+<img src="https://github.com/the9world/who_suicides/assets/130967390/a093298e-cf26-4361-917d-cdb31310e944" width="200" height="200"/>
 
+<img src="https://user-images.githubusercontent.com/50612841/130802756-cc322b08-06e5-4847-959b-2bd28e6ef3de.jpeg" width="200" height="200"/>
 
 ## 1. 프로젝트 정보  
 ✔ 과거 WHO Suicidies 데이터를 토대로 predict the future 결과와  
