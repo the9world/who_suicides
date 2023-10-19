@@ -16,7 +16,7 @@
 Kaggle에서 수집하여 Python으로 Pandas를 사용하여 데이터를 분석하고,  
 Seaborn, Matplotlib, Plotly 등을 사용하여 그래프 시각화 하였고,  
 FaceBook Prophet을 사용하여 미래 예측하였으며,  
-Streamlit과 AWS EC2 Anacond 가상환경에서 테스트 및 배포하였음.
+Streamlit과 AWS EC2 Anaconda 가상환경에서 테스트 및 배포하였음.
 
 ## 3. Progress period  
 ✔ 기간 : 2023-06-05 ~ 2023-06-07 (3일)  
