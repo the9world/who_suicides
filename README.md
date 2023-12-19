@@ -19,21 +19,15 @@ Seaborn, Matplotlib, Plotly 등을 사용하여 그래프 시각화 하였고,
 FaceBook Prophet을 사용하여 미래 예측하였으며,  
 Streamlit과 AWS EC2 Anaconda 가상환경에서 테스트 및 배포하였음.
 
-## 3. Progress period  
-✔ 기간 : 2023-06-05 ~ 2023-06-11 (7일)  
-- 1-3일차 : 데이터 분석, 시각화 및 미래예측  
-- 4-5일차 : streamlit 코드 작성 및 Test & AWS EC2 가상환경에서 TEST  
-- 6-7일차 : EC2 최종점검 및 README.MD 작성
-
-## 4. 배포 주소(URL)  
+## 3. 배포 주소(URL)  
 ✔ http://ec2-15-165-74-90.ap-northeast-2.compute.amazonaws.com:9999/  
 
-## 5. Layout
+## 4. Layout
 WHO Suicdes 내용이 다소 네거티브하고 무거운 주제의 데이터인 만큼  
 페이지를 전체적으로 다채롭고 다양한 색상의 플롯들과  
 포지티브한 이미지를 조합하여 밝은 분위기를 연출하였습니다.  
 
-## 6. Skills
+## 5. Skills
 ### ✔ Platforms  
 <img src="https://img.shields.io/badge/windows-0078D6?style=for-the-badge&logo=windows&logoColor=white"><img src="https://img.shields.io/badge/linux-FCC624?style=for-the-badge&logo=linux&logoColor=black"><img src="https://img.shields.io/badge/ANACONDA-44A833?style=badge&logo=anaconda&logoColor=white"><img src="https://img.shields.io/badge/AMAZON-AWS-232F3E?style=badge&logo=amazonaws&logoColor=white"><img src="https://img.shields.io/badge/GITHUB-181717?style=badge&logo=github&logoColor=white">
 
@@ -50,6 +44,7 @@ WHO Suicdes 내용이 다소 네거티브하고 무거운 주제의 데이터인
 <br><br>
 
 
+7. 대시보드 미리보기
 <span style="color:white; font-weight:400;font-size:18px">
 URL Sample Image</span>
 <details><summary> 
@@ -130,7 +125,7 @@ fig4.update_layout( title=
 <br><br>
 <br><br>
 
-
+8. Error 및 문제해결
 <span style="color:red; font-weight:600;font-size:30px">
 Python Error, Debuging
 </span>
