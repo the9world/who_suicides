@@ -14,7 +14,7 @@
 
 ## 2. 프로젝트 소개  
 ✔ 분석한 데이터는 1979년 ~ 2016년 국가별, 연령대별, 남녀별 자살률 데이터로  
-Kaggle에서 수집하여 Python으로 Pandas를 사용하여 데이터를 전처리 및 분석.  
+Kaggle에서 수집하여 Google Colab 에서 numpy와 pandas를 이용해 데이터 가공 및 분석
 Seaborn, Matplotlib, Plotly 등을 사용하여 그래프 시각화 하였고,  
 FaceBook Prophet을 사용하여 미래 예측하였으며,  
 Streamlit과 AWS EC2 Anaconda 가상환경에서 테스트 및 배포하였음.
