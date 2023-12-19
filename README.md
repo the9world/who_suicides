@@ -44,7 +44,7 @@ WHO Suicdes 내용이 다소 네거티브하고 무거운 주제의 데이터인
 <br><br>
 
 
-7. 대시보드 미리보기
+## 7. 대시보드 미리보기
 <span style="color:white; font-weight:400;font-size:18px">
 URL Sample Image</span>
 <details><summary> 
@@ -125,7 +125,7 @@ fig4.update_layout( title=
 <br><br>
 <br><br>
 
-8. Error 및 문제해결
+## 8. Error 및 문제해결
 <span style="color:red; font-weight:600;font-size:30px">
 Python Error, Debuging
 </span>
