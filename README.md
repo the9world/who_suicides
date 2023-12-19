@@ -23,7 +23,7 @@ Streamlit과 AWS EC2 Anaconda 가상환경에서 테스트 및 배포하였음.
 ✔ http://ec2-15-165-74-90.ap-northeast-2.compute.amazonaws.com:9999/  
 
 ## 4. Layout
-WHO Suicdes 내용이 다소 네거티브하고 무거운 주제의 데이터인 만큼  
+WHO Suicdes 라는 내용이 네거티브한 주제로 비춰질 수 있는 만큼  
 페이지를 전체적으로 다채롭고 다양한 색상의 플롯들과  
 포지티브한 이미지를 조합하여 밝은 분위기를 연출하였습니다.  
 
