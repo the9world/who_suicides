@@ -29,7 +29,7 @@ Streamlit과 AWS EC2 Anaconda 가상환경에서 테스트 및 배포.
 포지티브한 이미지를 조합하여 밝은 분위기를 연출하였습니다.  
 
 ✔ 출처  
-    1. 사이드바 이미지 출처 : 연작가 ( https://www.instagram.com/yeon.writer.1983/ )
+    1. 사이드바 이미지 출처 : 연작가 ( https://www.instagram.com/yeon.writer.1983/ )  
     2. 데이터 출처 : Kaggle ( https://www.kaggle.com/ )
 
 ## 5. Skills
