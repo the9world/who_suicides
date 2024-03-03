@@ -12,12 +12,13 @@
 자살률 감소에 도움이 될 수 있는지 알아보고자 WHO Suicides 데이터를 분석하였음.
 
 
-## 2. 프로젝트 소개  
+## 2. 프로젝트 기간 및 소개  
+2023.06 ~ 2023.07
+
 ✔ 분석한 데이터는 1979년 ~ 2016년 국가별, 연령대별, 남녀별 자살률 데이터로  
 Kaggle에서 수집하여 Google Colab 에서 numpy와 pandas를 이용해 데이터 가공 및 분석  
-Seaborn, Matplotlib, Plotly 등을 사용하여 그래프 시각화 하였고,  
-FaceBook Prophet을 사용하여 미래 예측하였으며,  
-Streamlit과 AWS EC2 Anaconda 가상환경에서 테스트 및 배포하였음.
+Seaborn, Matplotlib, Plotly 등을 사용하여 그래프 시각화 하고, FaceBook Prophet을 사용하여 미래 예측
+Streamlit과 AWS EC2 Anaconda 가상환경에서 테스트 및 배포.
 
 ## 3. 배포 주소(URL)  
 ✔ http://ec2-15-165-74-90.ap-northeast-2.compute.amazonaws.com:9999/  
