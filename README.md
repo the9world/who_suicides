@@ -23,10 +23,14 @@ Streamlit과 AWS EC2 Anaconda 가상환경에서 테스트 및 배포.
 ## 3. 배포 주소(URL)  
 ✔ http://ec2-15-165-74-90.ap-northeast-2.compute.amazonaws.com:9999/  
 
-## 4. Layout
+## 4. Layout 및 이미지 출처
 ✔ WHO Suicdes 라는 내용이 네거티브한 주제로 비춰질 수 있으므로  
 페이지를 전체적으로 다채롭고 다양한 색상의 플롯들과  
 포지티브한 이미지를 조합하여 밝은 분위기를 연출하였습니다.  
+
+✔ 출처  
+    1. 사이드바 이미지 출처 : 연작가 ( https://www.instagram.com/yeon.writer.1983/ )
+    2. 데이터 출처 : Kaggle ( https://www.kaggle.com/ )
 
 ## 5. Skills
 ### ✔ Platforms  
